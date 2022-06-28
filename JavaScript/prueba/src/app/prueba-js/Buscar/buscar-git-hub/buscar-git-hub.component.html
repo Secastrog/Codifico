@@ -1,0 +1,85 @@
+
+<body>
+    <p-toast position="top-center"></p-toast>
+    <div class="finder">
+        <div class="busqueda">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese usuario" aria-label="Recipient's username"
+                    aria-describedby="button-addon2" [(ngModel)]="busqueda">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="buscar()"><i
+                            class="fa fa-github"></i>&nbsp;<i class="fa fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="card">
+            <div class="green">
+                <div class="additional">
+                    <div class="user-card">
+                        <br>
+                        <div class="level">
+                            {{respuesta.login}}
+                        </div>
+                        <div class="round">
+                            <img src={{respuesta.avatar_url}} alt="">
+                        </div>
+                        <div class="points">
+                            {{respuesta.created_at}}
+                        </div>
+
+                    </div>
+                    <div class="more-info">
+                        <h3>{{respuesta.name}}</h3>
+                        <div class="inter">
+                            <div class="ubication">
+                                <i class="fa fa-location-dot" *ngIf="icono"></i> &nbsp;{{respuesta.location}}
+                            </div>
+                        </div>
+                        <div class="inter"*ngIf="icono">
+
+                            <i class="fa-brands fa-twitter" ></i>&nbsp;@{{respuesta.twitter_username}}
+                        </div>
+                        <div class="coords">
+                            <div class="center">
+                                <a style="font-size: 15px;"><i class="fa fa-blog"
+                                        *ngIf="icono"></i>&nbsp;{{respuesta.blog}}</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="general" *ngIf="icono">
+                        <div class="more">
+                            <div class="title">
+                                <b>REPOS</b>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <b>FOLLOWERS</b>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <b>FOLLOWING</b>
+                            </div>
+                            <div class="title-Icon">
+                                <b><span style="font-size: 2em;"><i class="fa-solid fa-code-branch"></i></span></b>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <b><span style="font-size: 2em;"><i class="fa-solid fa-users"></i></span></b>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <b><span style="font-size: 2em;"><i class="fa-solid fa-user-group"></i></span></b>
+                            </div>
+                            <div class="description">
+                                <b>{{respuesta.public_repos}}</b>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <b>{{respuesta.followers}}</b>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <b>{{respuesta.following}}</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-scale-multiple">
+    <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>

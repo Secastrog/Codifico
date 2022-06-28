@@ -1,0 +1,15 @@
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\bin\Debug\net6.0\Prueba_Csharp.exe
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\bin\Debug\net6.0\Prueba_Csharp.deps.json
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\bin\Debug\net6.0\Prueba_Csharp.runtimeconfig.json
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\bin\Debug\net6.0\Prueba_Csharp.dll
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\bin\Debug\net6.0\Prueba_Csharp.pdb
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.csproj.AssemblyReference.cache
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.AssemblyInfoInputs.cache
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.AssemblyInfo.cs
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.csproj.CoreCompileInputs.cache
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.dll
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\refint\Prueba_Csharp.dll
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.pdb
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\Prueba_Csharp.genruntimeconfig.cache
+C:\SERGIO\Pruebas tecnicas\Codifico\Desarrollo\C#\Prueba_Csharp\Prueba_Csharp\obj\Debug\net6.0\ref\Prueba_Csharp.dll
