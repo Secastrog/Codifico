@@ -70,17 +70,9 @@ export class BuscarGitHubComponent implements OnInit {
       this.services.GetPerfil(this.busqueda).subscribe(
         (dt) => {
           this.respuesta = dt;
-          if(this.resp.id == 0){
-            this.spinner.hide();
-            this.mensaje(2, 'No hay usuarios que cumplan con el criterio de búsqueda');
-            this.respuesta =  this.resp;
-            this.icono = false;
-  
-          }else{
             this.icono = true;
             this.spinner.hide();
             console.log(this.respuesta);
-          }
           
         }, (error) => {
           this.spinner.hide();
