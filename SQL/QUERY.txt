@@ -1,0 +1,9 @@
+use [StoreSample]
+go
+select DISTINCT a.companyname, SUM(DISTINCT b.freight) AS TotalFreight, SUM( c.unitprice * c.qty) AS TotalCostShipped, SUM(c.qty) AS TotalOItemsShipped
+
+from [Sales].[Shippers] AS a inner join
+[Sales].[Orders] AS b ON a.shipperid = b.shipperid inner join
+[Sales].[OrderDetails] AS c ON b.orderid = c.orderid
+group by a.companyname
+order by TotalFreight desc
