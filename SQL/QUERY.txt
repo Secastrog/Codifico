@@ -1,3 +1,5 @@
+
+Shipper Summary
 use [StoreSample]
 go
 select DISTINCT a.companyname, SUM(DISTINCT b.freight) AS TotalFreight, SUM( c.unitprice * c.qty) AS TotalCostShipped, SUM(c.qty) AS TotalOItemsShipped
@@ -7,3 +9,21 @@ from [Sales].[Shippers] AS a inner join
 [Sales].[OrderDetails] AS c ON b.orderid = c.orderid
 group by a.companyname
 order by TotalFreight desc
+
+Sales Date Prediction
+SELECT
+  companyname,MAX(b.orderdate) AS LastOrderDate,
+  CAST((
+    MAX(CAST(b.orderdate AS FLOAT))
+    + (
+      MAX(CAST(b.orderdate AS FLOAT))
+      - MIN(CAST(b.orderdate AS FLOAT))
+    ) 
+  ) AS DATETIME) NextPredictedOrder
+FROM
+  [Sales].[Customers]AS a inner join
+[Sales].[Orders] AS b ON b.custid = a.custid
+GROUP BY
+  companyname
+HAVING
+  COUNT(*) > 1
